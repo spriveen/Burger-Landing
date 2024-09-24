@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local"; // Make sure to import `localFont` for local fonts.
 import { Barlow_Condensed } from "next/font/google"; // Correct import for Google Fonts.
 import "./globals.css";
+import ResponsiveNav from "./components/Navigation/ResponsiveNav";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${barlowCondensed.className} antialiased`}
       >
+        <ResponsiveNav />
         {children}
       </body>
     </html>
