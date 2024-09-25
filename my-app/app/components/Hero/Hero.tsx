@@ -38,7 +38,7 @@ const Hero = () => {
     >
         {/* 1st hero side */}
  <div className='w-[100%] h-[88vh] flex items-center justify-center flex-col bg-blue-950
- clip_path'>
+ md:clip_path'>
 <div className='w-[80%] grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-[2rem] mx-auto'>
     {/* Image */}
     <Image 
@@ -76,7 +76,7 @@ const Hero = () => {
  {/* 2nd slider */}
 
  <div className='w-[100%] h-[88vh] flex items-center justify-center flex-col bg-red-950
- clip_path'>
+ md:clip_path'>
 <div className='w-[80%] grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-[2rem] mx-auto'>
     {/* Image */}
     <Image 
