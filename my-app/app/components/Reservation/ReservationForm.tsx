@@ -1,4 +1,5 @@
 import React from 'react'
+import { FiClock } from 'react-icons/fi'
 import { GrRestaurant } from 'react-icons/gr'
 
 const ReservationForm = () => {
@@ -33,12 +34,23 @@ const ReservationForm = () => {
                 4 People
                 </option>
          </select>
-          <input type='data' className='px-10 py-2.5 bg-transparent rounded-lg outline-none font-bold
-          text-[17px] text-white border-[2.2px] border-gray-100' />
+         <input 
+  type='date' 
+  className='px-10 py-2.5 bg-transparent rounded-lg outline-none font-bold
+    text-[17px] text-white border-[2.2px] border-gray-100'
+/>
+
         </div>
-        <input type='time' className='px-10 py-2.5 bg-transparent block w-[80%] mx-auto mt-[1rem]
-        rounded-lg outline-none font-bold text-[17px] text-white border-[2.2px] border-gray-100' 
-         />
+        <div className="relative w-[80%] mx-auto mt-[1rem]">
+  <input 
+    type='time' 
+    className='px-10 py-2.5 bg-transparent w-full
+      rounded-lg outline-none font-bold text-[17px] text-white border-[2.2px] border-gray-100
+      appearance-none'
+  />
+  <FiClock className="absolute right-3 top-1/2 transform -translate-y-1/2 text-white text-xl" />
+</div>
+
          <div className='mt-[2rem] w-[80%] text-center mx-auto'>
             <button className='px-8 py-3 rounded-lg mb-[3rem] text-[16px] w-full bg-blue-950
             transition-all duration-200 hover:bg-red-600 text-white'>Book Now</button>

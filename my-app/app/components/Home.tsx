@@ -7,6 +7,7 @@ import Team from './Team/Team';
 import Reservation from './Reservation/Reservation';
 import Newsletter from './Newsletter/Newsletter';
 
+
 const Home = () => {
   return (
     <div className='overflow-hidden'>
@@ -17,6 +18,7 @@ const Home = () => {
       <Team />
       <Reservation />
       <Newsletter />
+      
     </div>
   );
 };
