@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaBurger } from 'react-icons/fa6'
+import { FaBurger, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
@@ -66,17 +66,27 @@ const Footer = () => {
             {/* 4th part */}
             <div>
             <h1 className='text-[23px] font-semibold mb-[2rem] uppercase text-white'>
-                 Opening Hours 
-                    </h1>
-                    <p className='text-white text-[18px]'> 
-                        Monday - Friday : <span className='text-yellow-400'>8.00am - 4.00pm </span> 
-                             </p>
-                         <p  className='text-white text-[18px]'> 
-                        Saturaday  : <span className='text-yellow-400'> 8.00am - 12.00pm </span>
-                             </p>
-                             {/* social icons */}
-                 </div>
-           </div>
+            Opening Hours 
+             </h1>
+            <p className='text-white text-[18px]'> 
+             Monday - Friday : <span className='text-yellow-400'>8.00am - 4.00pm </span> 
+            </p>
+            <p  className='text-white text-[18px]'> 
+            Saturaday  : <span className='text-yellow-400'> 8.00am - 12.00pm </span>
+             </p>
+            {/* social icons */}
+            <div className='flex mt-[2rem] items-center space-x-6'>
+  <FaFacebook className='w-[1.5rem] h-[1.5rem] text-blue-400'/>
+  <FaInstagram className='w-[1.5rem] h-[1.5rem] text-red-400'/>
+  <FaTwitter className='w-[1.5rem] h-[1.5rem] text-blue-300'/>
+  <FaWhatsapp className='w-[1.5rem] h-[1.5rem] text-green-500'/>
+</div>
+        </div>
+        </div>
+        {/* copyright text */}
+        <p className='text-center text-white opacity-50 mt-[1.5rem]'>
+            Copyright@ 2024 {""}
+            <span className='text-emerald-400'> Riveen_Official</span>.All rights reserved</p>
        </div>
       )
     }
