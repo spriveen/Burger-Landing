@@ -12,5 +12,16 @@
     }
 }
 
+input [type="date"]::-webkit-calendar-picker-indicator{
+    
+    filter: invert(1);
+}
+input [type="time"]::webkit-calendar-picker-indicator{
+    filter: invert(1);
+}
+input [type="time"]::webkit-calender-picker-indicator::after{
+    filter: invert(1);
+
+}
 
 

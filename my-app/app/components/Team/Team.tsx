@@ -23,7 +23,7 @@ const Team = () => {
         
         <TeamCard 
         image="/images/t3.jpg" 
-        name="Hohn"
+        name="Mitchel Luvis"
          position="Gorden Ramsay"
           />
       </div>
